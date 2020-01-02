@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="JsonCpp">
+      <UniqueIdentifier>{ac4aeadc-2c61-4e0a-abe9-e20336c931d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Consensus">
+      <UniqueIdentifier>{f2be1ec8-4ee2-49a0-ac36-ead59a088e95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osapi">
+      <UniqueIdentifier>{16bbae3f-9b71-4875-aac6-6fb4fc1d59b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MerkleTree">
+      <UniqueIdentifier>{cc8e69cf-b8d0-4e35-adfd-6ddc14a24d57}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IoT_Node_GUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="myitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="myline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IoT_Network_Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="actThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InteractiveView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RangeItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimNodeSendThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimNodeRecvThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jsoncpp\json_reader.cpp">
+      <Filter>JsonCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="jsoncpp\json_value.cpp">
+      <Filter>JsonCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="jsoncpp\json_writer.cpp">
+      <Filter>JsonCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeRangeDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeBlockchainDatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="osapi\Mutex_Linux.cpp">
+      <Filter>osapi</Filter>
+    </ClCompile>
+    <ClCompile Include="osapi\Mutex_Win32.cpp">
+      <Filter>osapi</Filter>
+    </ClCompile>
+    <ClCompile Include="osapi\Semaphore_Linux.cpp">
+      <Filter>osapi</Filter>
+    </ClCompile>
+    <ClCompile Include="osapi\Semaphore_Win32.cpp">
+      <Filter>osapi</Filter>
+    </ClCompile>
+    <ClCompile Include="osapi\Socket.cpp">
+      <Filter>osapi</Filter>
+    </ClCompile>
+    <ClCompile Include="osapi\Thread_Linux.cpp">
+      <Filter>osapi</Filter>
+    </ClCompile>
+    <ClCompile Include="osapi\Thread_Win32.cpp">
+      <Filter>osapi</Filter>
+    </ClCompile>
+    <ClCompile Include="Consensus.cpp">
+      <Filter>Consensus</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="broadcastThread.cpp">
+      <Filter>Consensus</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="IoT_Node_GUI.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="actThread.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="IoT_Network_Scene.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="InteractiveView.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="myitem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SimNodeRecvThread.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SimNodeSendThread.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ChangeRangeDialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="NodeBlockchainDatabase.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="NodeLog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Consensus.h">
+      <Filter>Consensus</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="IoT_Node_GUI.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ChangeRangeDialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="NodeBlockchainDatabase.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="NodeLog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="IoT_Node_GUI.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="myline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RangeItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\allocator.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\assertions.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\autolink.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\config.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\features.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\forwards.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\json.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\json_tool.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\reader.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\stdint.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\value.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\version.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\writer.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="osapi\Mutex.h">
+      <Filter>osapi</Filter>
+    </ClInclude>
+    <ClInclude Include="osapi\osapi.h">
+      <Filter>osapi</Filter>
+    </ClInclude>
+    <ClInclude Include="osapi\Semaphore.h">
+      <Filter>osapi</Filter>
+    </ClInclude>
+    <ClInclude Include="osapi\Socket.h">
+      <Filter>osapi</Filter>
+    </ClInclude>
+    <ClInclude Include="osapi\Thread.h">
+      <Filter>osapi</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="broadcastThread.h">
+      <Filter>Consensus</Filter>
+    </ClInclude>
+    <ClInclude Include="MerkleTree\binarytree.h">
+      <Filter>MerkleTree</Filter>
+    </ClInclude>
+    <ClInclude Include="MerkleTree\merkletree.h">
+      <Filter>MerkleTree</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteLineThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="jsoncpp\json_valueiterator.inl">
+      <Filter>JsonCpp</Filter>
+    </None>
+    <None Include="jsoncpp\sconscript">
+      <Filter>JsonCpp</Filter>
+    </None>
+    <None Include="jsoncpp\version.h.in">
+      <Filter>JsonCpp</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="osapi\Version.txt">
+      <Filter>osapi</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

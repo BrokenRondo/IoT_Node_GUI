@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>QtVS_v301</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;gui;network;widgets</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>msvc2017_64</QtInstall>
+    <QtModules>core;gui;network;widgets</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalIncludeDirectories>E:\Visual Studio Projects\source\repos\IoT_Node_GUI\IoT_Node_GUI\MerkleTree\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\Visual Studio Projects\source\repos\IoT_Node_GUI\IoT_Node_GUI\MerkleTree\lib;C:\Qt\Qt5.10.1\5.10.1\msvc2017_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <StackReserveSize>100000</StackReserveSize>
+      <HeapReserveSize>
+      </HeapReserveSize>
+      <StackCommitSize>100000</StackCommitSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalIncludeDirectories>E:\Visual Studio Projects\source\repos\IoT_Node_GUI\IoT_Node_GUI\MerkleTree\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\Visual Studio Projects\source\repos\IoT_Node_GUI\IoT_Node_GUI\MerkleTree\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <HeapReserveSize>10240000</HeapReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="actThread.cpp" />
+    <ClCompile Include="broadcastThread.cpp" />
+    <ClCompile Include="ChangeRangeDialog.cpp" />
+    <ClCompile Include="Consensus.cpp" />
+    <ClCompile Include="Global.cpp" />
+    <ClCompile Include="InteractiveView.cpp" />
+    <ClCompile Include="IoT_Network_Scene.cpp" />
+    <ClCompile Include="IoT_Node_GUI.cpp" />
+    <ClCompile Include="jsoncpp\json_reader.cpp" />
+    <ClCompile Include="jsoncpp\json_value.cpp" />
+    <ClCompile Include="jsoncpp\json_writer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="myitem.cpp" />
+    <ClCompile Include="myline.cpp" />
+    <ClCompile Include="NodeBlockchainDatabase.cpp" />
+    <ClCompile Include="NodeLog.cpp" />
+    <ClCompile Include="osapi\Mutex_Linux.cpp" />
+    <ClCompile Include="osapi\Mutex_Win32.cpp" />
+    <ClCompile Include="osapi\Semaphore_Linux.cpp" />
+    <ClCompile Include="osapi\Semaphore_Win32.cpp" />
+    <ClCompile Include="osapi\Socket.cpp" />
+    <ClCompile Include="osapi\Thread_Linux.cpp" />
+    <ClCompile Include="osapi\Thread_Win32.cpp" />
+    <ClCompile Include="RangeItem.cpp" />
+    <ClCompile Include="SimNodeRecvThread.cpp" />
+    <ClCompile Include="SimNodeSendThread.cpp" />
+    <ClCompile Include="TextItem.cpp" />
+    <ClCompile Include="util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="IoT_Node_GUI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="ChangeRangeDialog.ui" />
+    <QtUic Include="IoT_Node_GUI.ui" />
+    <QtUic Include="NodeBlockchainDatabase.ui" />
+    <QtUic Include="NodeLog.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="IoT_Node_GUI.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ChangeRangeDialog.h" />
+    <QtMoc Include="NodeBlockchainDatabase.h" />
+    <QtMoc Include="NodeLog.h" />
+    <QtMoc Include="Consensus.h" />
+    <ClInclude Include="broadcastThread.h" />
+    <ClInclude Include="DeleteLineThread.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="MerkleTree\binarytree.h" />
+    <ClInclude Include="MerkleTree\merkletree.h" />
+    <ClInclude Include="osapi\Mutex.h" />
+    <ClInclude Include="osapi\osapi.h" />
+    <ClInclude Include="osapi\Semaphore.h" />
+    <ClInclude Include="osapi\Socket.h" />
+    <ClInclude Include="osapi\Thread.h" />
+    <ClInclude Include="util.h" />
+    <QtMoc Include="InteractiveView.h" />
+    <ClInclude Include="jsoncpp\allocator.h" />
+    <ClInclude Include="jsoncpp\assertions.h" />
+    <ClInclude Include="jsoncpp\autolink.h" />
+    <ClInclude Include="jsoncpp\config.h" />
+    <ClInclude Include="jsoncpp\features.h" />
+    <ClInclude Include="jsoncpp\forwards.h" />
+    <ClInclude Include="jsoncpp\json.h" />
+    <ClInclude Include="jsoncpp\json_tool.h" />
+    <ClInclude Include="jsoncpp\reader.h" />
+    <ClInclude Include="jsoncpp\stdint.h" />
+    <ClInclude Include="jsoncpp\value.h" />
+    <ClInclude Include="jsoncpp\version.h" />
+    <ClInclude Include="jsoncpp\writer.h" />
+    <ClInclude Include="RangeItem.h" />
+    <QtMoc Include="SimNodeRecvThread.h" />
+    <QtMoc Include="SimNodeSendThread.h" />
+    <ClInclude Include="TextItem.h" />
+    <QtMoc Include="actThread.h" />
+    <QtMoc Include="IoT_Network_Scene.h" />
+    <QtMoc Include="myitem.h" />
+    <ClInclude Include="myline.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="jsoncpp\json_valueiterator.inl" />
+    <None Include="jsoncpp\sconscript" />
+    <None Include="jsoncpp\version.h.in" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="osapi\Version.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
